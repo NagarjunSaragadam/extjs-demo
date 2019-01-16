@@ -1,0 +1,193 @@
+Ext.application({
+    name: 'SSC',    
+    launch: function(){     
+/////////////////////////////////////////////////////////////////////////////////////////////////
+Ext.define('User', {
+    extend: 'Ext.data.Model',
+    fields: [ 'name','Gender','email', 'phone' ]
+});
+var locdata;
+var userstore1 = Ext.Ajax.request
+   (
+           {
+               url: 'https://jsonplaceholder.typicode.com/users',
+               method: 'Get',
+               jsonData: {},
+               success: function (response) {                   
+                   var sdata = response.responseText.replace('{"d":', '').replace('}]}', '}') + ']';                                      
+                   locdata = response.responseText;
+                   alert(locdata);                   
+                   data:response.responseText;
+               }
+           }
+ );
+
+
+ var URLdata = "https://jsonplaceholder.typicode.com/users";
+      var storedata = new Ext.data.Store({
+          fields: ['id','name','location','surveyDate','surveyTime','inputUserId'],
+            proxy: {
+                type: 'rest',
+               url:URLdata,
+                reader: {
+                    type: 'json',
+                    root: 'items',                   
+                }
+            }
+        });
+           storedata.load();
+           var gridu = new Ext.grid.GridPanel({
+            store: storedata,
+            columns: [
+                {header: "id", width: 60, dataIndex: 'id', sortable: true},
+                {header: "name", width: 60, dataIndex: 'name', sortable: true},
+                {header: "location", width: 60, dataIndex: 'location', sortable: true},
+                {header: "surveyDate", width: 100, dataIndex: 'surveyDate', sortable: true},
+                {header: "surveyTime", width: 100, dataIndex: 'surveyTime', sortable: true},
+                {header: "inputUserId", width:80, dataIndex: 'inputUserId', sortable: true}
+            ],
+            renderTo:'example-grid',
+            width:470,
+            height:200
+        });
+
+
+var userStore = Ext.create('Ext.data.Store', {
+    model: 'User',    
+    data: [
+        { Sno:1, name: 'Lisa',Gender:'Male', email: 'lisa@simpsons.com', phone: '555-111-1224' },
+        { Sno:2,name: 'Bart',Gender:'Female', email: 'bart@simpsons.com', phone: '555-222-1234' },
+        { Sno:3,name: 'Homer',Gender:'Female', email: 'homer@simpsons.com', phone: '555-222-1244' },
+        { Sno:4,name: 'Marge',Gender:'Female', email: 'marge@simpsons.com', phone: '555-222-1254' },
+		{ Sno:5,name: 'Lisa',Gender:'Male', email: 'lisa@simpsons.com', phone: '555-111-1224' },
+        { Sno:6,name: 'Bart',Gender:'Female', email: 'bart@simpsons.com', phone: '555-222-1234' },
+        { Sno:7,name: 'Homer',Gender:'Female', email: 'homer@simpsons.com', phone: '555-222-1244' },
+        { Sno:8,name: 'Marge',Gender:'Female', email: 'marge@simpsons.com', phone: '555-222-1254' },
+		{ Sno:9,name: 'Lisa',Gender:'Male', email: 'lisa@simpsons.com', phone: '555-111-1224' },
+        { Sno:10,name: 'Bart',Gender:'Female', email: 'bart@simpsons.com', phone: '555-222-1234' },
+        { Sno:11,name: 'Homer',Gender:'Female', email: 'homer@simpsons.com', phone: '555-222-1244' },
+        { Sno:12,name: 'Marge',Gender:'Female', email: 'marge@simpsons.com', phone: '555-222-1254' },
+		{ Sno:13,name: 'Lisa',Gender:'Male', email: 'lisa@simpsons.com', phone: '555-111-1224' },
+        { Sno:14,name: 'Bart',Gender:'Female', email: 'bart@simpsons.com', phone: '555-222-1234' },
+        { Sno:15,name: 'Homer',Gender:'Female', email: 'homer@simpsons.com', phone: '555-222-1244' },
+        { Sno:16,name: 'Marge',Gender:'Female', email: 'marge@simpsons.com', phone: '555-222-1254' }
+    ]
+});	
+var filterPanel1 = Ext.create('Ext.grid.Panel', {    
+    renderTo: document.body,
+    store: storedata,
+    width: 500,
+    height: 280,
+	margin: '5 1 10 10',
+    title: 'Application Users',
+    columns: [
+	{	
+		xtype: 'rownumberer',
+		width: 20,
+		sortable: true		
+    }, 
+	{
+		text: 'Sno',
+		width: 40,
+		sortable: true,
+		hideable: false,
+		dataIndex: 'Sno'
+    },	
+	{
+		text: 'Name',
+		width: 100,
+		sortable: false,
+		hideable: false,
+		dataIndex: 'name'
+    },
+    {
+		text: 'Gender',
+		width: 50,
+		sortable: false,
+		hideable: false,
+		dataIndex: 'Gender'
+    },	
+    {
+		text: 'Email Address',
+		width: 150,
+		dataIndex: 'email'            
+    },
+    {
+		text: 'Phone Number',
+		flex: 1,
+		dataIndex: 'phone'
+    }
+    ]
+});
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+var filterPanel2 = Ext.create('Ext.panel.Panel', {
+    bodyPadding: 5,  
+    width: 300,height: 280,
+	margin: '5 10 10 10',	
+    title: 'Transactions',
+    items: [{
+        xtype: 'textfield',
+        fieldLabel: 'Name'
+            },				
+        {
+            xtype      : 'fieldcontainer',
+            fieldLabel : 'gender',
+            defaultType: 'radiofield',
+            defaults: {
+                flex: 1
+            },
+            layout: 'hbox',
+            items: [
+                {
+                    boxLabel  : 'Male',
+                    name      : 'gender',
+                    inputValue: 'Male',
+                    id        : 'Male1',
+					Selected:  true
+                }, {
+                    boxLabel  : 'Female',
+                    name      : 'gender',
+                    inputValue: 'Female',
+                    id        : 'Female2'
+                } 
+            ]
+        },
+            
+ 	        {
+        xtype: 'textfield',
+        fieldLabel: 'Email Address'
+            },
+	        {
+        xtype: 'textfield',
+        fieldLabel: 'Phone number'
+            },		
+			{        
+        xtype: 'panel',  
+        border:0,		
+		items: [ 
+		{xtype: 'button',margin: '0px 0px 0 105px', text: 'Submit'}, 		
+        {xtype: 'button',margin: '0px 0px 0 20px', text: 'Reset'}
+		    ]
+            },
+	],
+    renderTo: Ext.getBody()
+});
+        ////////////////////////////////////////////////////////////////////////////////////
+var p = new Ext.Panel( {
+		title: 'Nagarjun practice',
+		renderTo: document.body,
+		margin: '5 0 0 0',
+		width: 835,
+		height: 326,
+		sortable: true,
+		layout: 'hbox',
+		items: [ filterPanel1,filterPanel2  ]
+    });
+//////////////////////////////////////////////////////////////////////////////////////////////
+    }
+});
+
+
+
+
+

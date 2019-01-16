@@ -1,0 +1,6 @@
+E:\Practice\Kofaxsampledemo\Nagarjun\bin\Nagarjun.dll.config
+E:\Practice\Kofaxsampledemo\Nagarjun\bin\Nagarjun.dll
+E:\Practice\Kofaxsampledemo\Nagarjun\bin\Nagarjun.pdb
+E:\Practice\Kofaxsampledemo\Nagarjun\obj\Release\Nagarjun.csprojResolveAssemblyReference.cache
+E:\Practice\Kofaxsampledemo\Nagarjun\obj\Release\Nagarjun.dll
+E:\Practice\Kofaxsampledemo\Nagarjun\obj\Release\Nagarjun.pdb

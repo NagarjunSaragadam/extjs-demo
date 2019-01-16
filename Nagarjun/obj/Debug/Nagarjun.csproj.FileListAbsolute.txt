@@ -1,0 +1,12 @@
+C:\Users\IT\Documents\Visual Studio 2013\Projects\Kofaxsampledemo\Nagarjun\bin\Nagarjun.dll.config
+C:\Users\IT\Documents\Visual Studio 2013\Projects\Kofaxsampledemo\Nagarjun\bin\Nagarjun.dll
+C:\Users\IT\Documents\Visual Studio 2013\Projects\Kofaxsampledemo\Nagarjun\bin\Nagarjun.pdb
+C:\Users\IT\Documents\Visual Studio 2013\Projects\Kofaxsampledemo\Nagarjun\obj\Debug\Nagarjun.csprojResolveAssemblyReference.cache
+C:\Users\IT\Documents\Visual Studio 2013\Projects\Kofaxsampledemo\Nagarjun\obj\Debug\Nagarjun.dll
+C:\Users\IT\Documents\Visual Studio 2013\Projects\Kofaxsampledemo\Nagarjun\obj\Debug\Nagarjun.pdb
+E:\Practice\Kofaxsampledemo\Nagarjun\bin\Nagarjun.dll.config
+E:\Practice\Kofaxsampledemo\Nagarjun\bin\Nagarjun.dll
+E:\Practice\Kofaxsampledemo\Nagarjun\bin\Nagarjun.pdb
+E:\Practice\Kofaxsampledemo\Nagarjun\obj\Debug\Nagarjun.dll
+E:\Practice\Kofaxsampledemo\Nagarjun\obj\Debug\Nagarjun.pdb
+E:\Practice\Kofaxsampledemo\Nagarjun\obj\Debug\Nagarjun.csprojResolveAssemblyReference.cache

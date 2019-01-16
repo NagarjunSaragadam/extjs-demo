@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<EmployeeDetails>
+
+  <Employee>
+    
+    <Sno>1</Sno>
+
+    <Name>Lisa</Name>
+
+    <Gender>Female</Gender>
+
+    <Emailaddress>lisa@simpsons.com</Emailaddress>
+
+    <Phonenumber>555-111-1224</Phonenumber>
+
+  </Employee>
+
+
+  <Employee>
+
+    <Sno>2</Sno>
+
+    <Name>Jerry</Name>
+
+    <Gender>Male</Gender>
+
+    <Emailaddress>losa@simpsons.com</Emailaddress>
+
+    <Phonenumber>555-222-1224</Phonenumber>
+
+  </Employee>
+
+
+
+
+</EmployeeDetails>
