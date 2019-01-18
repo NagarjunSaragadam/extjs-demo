@@ -10,3 +10,9 @@ E:\Practice\Kofaxsampledemo\Nagarjun\bin\Nagarjun.pdb
 E:\Practice\Kofaxsampledemo\Nagarjun\obj\Debug\Nagarjun.dll
 E:\Practice\Kofaxsampledemo\Nagarjun\obj\Debug\Nagarjun.pdb
 E:\Practice\Kofaxsampledemo\Nagarjun\obj\Debug\Nagarjun.csprojResolveAssemblyReference.cache
+E:\Practice\Kofaxsampledemo\extjs-demo\Nagarjun\bin\Nagarjun.dll.config
+E:\Practice\Kofaxsampledemo\extjs-demo\Nagarjun\bin\Nagarjun.dll
+E:\Practice\Kofaxsampledemo\extjs-demo\Nagarjun\bin\Nagarjun.pdb
+E:\Practice\Kofaxsampledemo\extjs-demo\Nagarjun\obj\Debug\Nagarjun.csprojResolveAssemblyReference.cache
+E:\Practice\Kofaxsampledemo\extjs-demo\Nagarjun\obj\Debug\Nagarjun.dll
+E:\Practice\Kofaxsampledemo\extjs-demo\Nagarjun\obj\Debug\Nagarjun.pdb

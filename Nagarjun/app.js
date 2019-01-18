@@ -2,7 +2,7 @@ Ext.application({
     name: 'SSC',    
     launch: function(){     
 /////////////////////////////////////////////////////////////////////////////////////////////////
-Ext.define('User', {
+Ext.define('Employee', {
     extend: 'Ext.data.Model',
     fields:  [ 'Sno','Username','Gender','Email', 'Phonenumber' ],
 });

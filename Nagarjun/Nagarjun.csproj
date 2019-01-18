@@ -58,27 +58,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="24.html" />
-    <Content Include="23.html" />
     <Content Include="app.js" />
-    <Content Include="app1.js" />
-    <Content Include="app3.js" />
-    <Content Include="contact.xml" />
-    <Content Include="Employee.xml">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Employeetc.asmx" />
-    <Content Include="ext-all-debug.js" />
-    <Content Include="Ext.ux.AspWebAjaxProxy.js" />
-    <Content Include="ExtJsScripts\ext-all-debug.js" />
-    <Content Include="ExtJsScripts\ext-all.css" />
-    <Content Include="ExtJsScripts\Ext.ux.AspWebAjaxProxy.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Employeetc.asmx.cs">
-      <DependentUpon>Employeetc.asmx</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
