@@ -23,10 +23,10 @@ storedata.load();
 var filterPanel1 = Ext.create('Ext.grid.Panel', {    
     renderTo: document.body,
     id: 'Usrgrid',
-    store: storedata,
-    width: 500,
+    store: storedata,        
+    width: 520,
     height: 280,
-	margin: '5 1 10 10',
+	margin: '5 1 10 5',
     title: 'Application Users',
     columns: [
 	{	
@@ -36,7 +36,7 @@ var filterPanel1 = Ext.create('Ext.grid.Panel', {
     }, 
 	{
 		text: 'Sno',
-		width: 40,
+		width: 50,
 		sortable: true,
 		hideable: false,
 		dataIndex: 'Sno'
@@ -50,7 +50,7 @@ var filterPanel1 = Ext.create('Ext.grid.Panel', {
     },
     {
 		text: 'Gender',
-		width: 50,
+		width: 70,
 		sortable: false,
 		hideable: false,
 		dataIndex: 'Gender'
@@ -61,7 +61,8 @@ var filterPanel1 = Ext.create('Ext.grid.Panel', {
 		dataIndex: 'Email'            
     },
     {
-		text: 'Phone Number',
+        text: 'Phone Number',
+        width: 150,
 		flex: 1,
 		dataIndex: 'Phonenumber'
     }
@@ -84,7 +85,7 @@ var filterPanel2 = Ext.create('Ext.form.Panel', {
     id: 'UsrFrm',
     bodyPadding: 5,  
     width: 300,height: 280,
-	margin: '5 10 10 10',	
+    margin: '5 1 10 5',
     title: 'Transactions',
     items: [{
         xtype: 'textfield',
@@ -219,10 +220,10 @@ var filterPanel2 = Ext.create('Ext.form.Panel', {
 });
 ////////////////////////////////////////////////////////////////////////////////////
 var p = new Ext.Panel( {
-		title: 'Nagarjun practice',
+		title: 'Ext JS 6 practice',
 		renderTo: document.body,
 		margin: '5 0 0 0',
-		width: 835,
+		width: 900,
 		height: 348,
         sortable: true,		
         header:{
@@ -238,7 +239,7 @@ var p = new Ext.Panel( {
                     items: [ 
                         {
                             xtype: 'button',
-                            width: '80px',
+                            width: '100px',
                             margin: '0px 10px 0 0px', 
                             text: 'Add',                        
                             id: 'sbmtBtnadd',
@@ -256,7 +257,7 @@ var p = new Ext.Panel( {
                             xtype: 'button',
                             text: 'Delete',
                             iconCls  : 'fa fa-trash',
-                            width: '80px',
+                            width: '100px',
                             margin: '0px 10px 0 0px', 
                             id: 'sbmtBtndel',                        
                             listeners: {
