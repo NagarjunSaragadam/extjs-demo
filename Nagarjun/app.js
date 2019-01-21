@@ -62,7 +62,7 @@ var filterPanel1 = Ext.create('Ext.grid.Panel', {
     },
     {
         text: 'Phone Number',
-        width: 150,
+        width: 200,
 		flex: 1,
 		dataIndex: 'Phonenumber'
     }
@@ -84,7 +84,7 @@ filterPanel1.on('rowclick', function(grid, rowIndex, columnIndex, e) {
 var filterPanel2 = Ext.create('Ext.form.Panel', {
     id: 'UsrFrm',
     bodyPadding: 5,  
-    width: 300,height: 280,
+    width: 460,height: 280,
     margin: '5 1 10 5',
     title: 'Transactions',
     items: [{
@@ -92,6 +92,7 @@ var filterPanel2 = Ext.create('Ext.form.Panel', {
         name: 'uName',
         fieldLabel: 'Name',
         id: 'idusername',
+        width: 400,
         allowBlank: false,
         required: true,
         blankText : 'Please enter Username',
@@ -114,6 +115,7 @@ var filterPanel2 = Ext.create('Ext.form.Panel', {
         xtype: 'textfield',
         name: 'uemail',
         id: 'idemail',
+        width: 400,
         fieldLabel: 'Email Address',
         allowBlank: false,
         required: true,        
@@ -124,6 +126,7 @@ var filterPanel2 = Ext.create('Ext.form.Panel', {
 	        {
         xtype: 'textfield',
         name: 'uphonenumber',
+        width: 400,
         id: 'idphonenumber',
         fieldLabel: 'Phone number',
         allowBlank: false,
@@ -223,7 +226,7 @@ var p = new Ext.Panel( {
 		title: 'Ext JS 6 practice',
 		renderTo: document.body,
 		margin: '5 0 0 0',
-		width: 900,
+		width: 1000,
 		height: 348,
         sortable: true,		
         header:{
